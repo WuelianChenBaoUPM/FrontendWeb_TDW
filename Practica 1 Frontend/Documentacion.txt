@@ -1,0 +1,58 @@
+Descripción General
+Esta aplicación web permite explorar y gestionar información sobre figuras históricas de la ciencia, instituciones y sus contribuciones. La web tiene tres secciones principales: Personas, Entidades y Productos científicos.
+
+
+Funcionalidades Principales
+
+Modo Lector (reader):
+
+Visualización del índice con todos los elementos
+
+Acceso a detalles de cada registro
+
+Navegación por las relaciones entre elementos
+
+
+Modo Editor (writer):
+
+Todas las funciones del lector
+
+Creación de nuevos registros
+
+Edición de información existente
+
+Eliminación de registros
+
+
+
+Acceso y Usuarios Precargados
+La aplicación incluye 3 usuarios predefinidos:
+
+Usuario x (contraseña: x) - Rol: Lector
+
+Usuario y (contraseña: y) - Rol: Lector
+
+Usuario z (contraseña: z) - Rol: Editor
+
+
+
+Datos Iniciales
+La base de datos contiene información precargada:
+
+Personas: Isaac Newton, Albert Einstein
+
+Entidades: NASA
+
+Productos: Ley de Gravitación Universal
+
+
+
+Probar Web 
+
+Para probarlo hay que entrar en index.html y hay 3 formas:
+
+Para probar la web como usuario sin loguear: Simplemente accede al sitio y explora el índice de Personas, Entidades y Productos, aunque no podrás ver los detalles completos sin iniciar sesión.
+
+Como lector (reader): Inicia sesión con usuario "x" o "y" (contraseña igual al nombre) para navegar libremente por toda la información, incluyendo los detalles de cada elemento.
+
+Como editor (writer): Usa el usuario "z" (contraseña "z") para acceder a funciones avanzadas como crear, editar o eliminar registros, además de todas las opciones de visualización.

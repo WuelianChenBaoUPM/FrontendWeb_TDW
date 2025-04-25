@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anales de la Ciencia - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #login-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        #login-container label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        #login-container input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anales de la Ciencia</h1>
+    </header>
+
+    <main>
+        <div id="login-container">
+            <h2>Iniciar Sesión</h2>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" required>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" required>
+            <button id="boton-login">Entrar</button>
+            <div id="mensaje-login"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Anales de la Ciencia</p>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

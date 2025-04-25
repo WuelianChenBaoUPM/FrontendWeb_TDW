@@ -1,0 +1,54 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anales de la Ciencia - Índice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title"><i class="fas fa-atom science-icon"></i>Anales de la Ciencia</h1>
+        <div class="user-info">
+           <div id="writer-actions" style="display: none; text-align: center; margin: 3rem 0;">
+        <button id="btn-crear-persona" class="btn-crear"><i class="fas fa-user-plus"></i> Nueva Persona</button>
+        <button id="btn-crear-entidad" class="btn-crear"><i class="fas fa-building"></i> Nueva Entidad</button>
+        <button id="btn-crear-producto" class="btn-crear"><i class="fas fa-flask"></i> Nuevo Producto</button>
+    </div>
+</div>
+        </div>
+            <a href="login.html" id="enlace-login"><i class="fas fa-sign-in-alt"></i> Iniciar Sesión</a>
+            <a href="#" id="enlace-cerrar-sesion" style="display: none;"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+            <div id="nombre-usuario" style="display: none;"></div>
+        </div>
+    </header>
+
+  <main>
+    <section id="indice-personas">
+        <h2><i class="fas fa-user-graduate"></i> Personas</h2>
+        <ul id="lista-personas" class="lista-items"></ul>
+    </section>
+    <section id="indice-entidades">
+        <h2><i class="fas fa-university"></i> Entidades</h2>
+        <ul id="lista-entidades" class="lista-items"></ul>
+    </section>
+    <section id="indice-productos">
+        <h2><i class="fas fa-flask"></i> Productos</h2>
+        <ul id="lista-productos" class="lista-items"></ul>
+    </section>
+</main>
+
+    <footer>
+        <p>Anales de la Ciencia</p>
+    </footer>
+<div id="modal-crear" class="modal" style="display: none;">
+    <div class="modal-contenido">
+        <span class="cerrar-modal">&times;</span>
+        <h2 id="titulo-modal"></h2>
+        <div id="formulario-modal"></div>
+    </div>
+</div>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/writer.js"></script>
+</body>
+</html>

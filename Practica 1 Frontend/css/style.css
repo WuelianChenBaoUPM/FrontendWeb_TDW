@@ -1,0 +1,321 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#main-title {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Enlaces de login/logout */
+#enlace-login, #enlace-cerrar-sesion {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#enlace-login:hover, #enlace-cerrar-sesion:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #4ca1af;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-personas li, 
+#lista-entidades li, 
+#lista-productos li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.2s ease;
+}
+
+#lista-personas li:last-child, 
+#lista-entidades li:last-child, 
+#lista-productos li:last-child {
+    border-bottom: none;
+}
+
+#lista-personas li:hover, 
+#lista-entidades li:hover, 
+#lista-productos li:hover {
+    background-color: #f8f9fa;
+    padding-left: 0.5rem;
+    color: #2c3e50;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Efectos para los elementos científicos */
+.science-icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: #4ca1af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    #main-title {
+        font-size: 2rem;
+    }
+    
+    #enlace-login, #enlace-cerrar-sesion {
+        position: static;
+        display: block;
+        margin: 1rem auto;
+        width: fit-content;
+    }
+}
+
+.user-info {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    text-align: right;
+}
+
+#nombre-usuario {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+    padding: 0.2rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .user-info {
+        position: static;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    #nombre-usuario {
+        margin-top: 0.3rem;
+    }
+}
+
+.lista-items li {
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+}
+
+.enlace-detalle {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2c3e50;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.enlace-detalle:hover {
+    background-color: #f0f8ff;
+    transform: translateX(5px);
+}
+
+.enlace-detalle i {
+    margin-right: 0.8rem;
+    color: #4ca1af;
+    transition: transform 0.3s;
+}
+
+.enlace-detalle:hover i {
+    transform: rotate(90deg);
+}
+
+/* Estilos para writer */
+#writer-actions {
+    display: none;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.btn-crear {
+    background: #4ca1af;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-crear:hover {
+    background: #3a7d88;
+}
+
+.acciones-writer {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.btn-editar, .btn-eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4ca1af;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.btn-editar:hover {
+    color: #2c3e50;
+}
+
+.btn-eliminar:hover {
+    color: #d9534f;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-contenido {
+    background-color: white;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.cerrar-modal {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form-modal {
+    margin-top: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btn-guardar {
+    background: #4ca1af;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background: #f5f7fa;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+}
